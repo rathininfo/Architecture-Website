@@ -19,11 +19,10 @@
           theme: {
             extend: {
               colors: {
-                bg_primary: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);',
-                bg_secondary: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);',
+                primary : 'rgb(247, 247, 247)',
+                secondary : 'rgb(244, 244, 244)',
                 bg_third : 'rgb(28, 28, 28)',
                 bg_green : 'rgb(171, 239, 95)',
-
                 color_primary: 'rgb(33, 33, 33)',
                 color_secondary: 'rgb(73, 73, 73)',
               },
@@ -32,28 +31,28 @@
                 Manrope : 'Manrope',
               },
 
-              backgroundImage:{
-                form_bg : "url('./assets/bg.jpg')"
-              },
+              backgroundImage: {
+                form_bg: "url('./assets/bg.jpg')",
+                },
             }
           }
         }
       </script>
 </head>
-<body class="font-Manrope">
-    <header class="w-11/12 mx-auto bg-bg_primary h-36">
-            <section class="flex justify-between items-center bg-base-100">
-                <div class="flex-start">
-                    <a class="text-xl"><i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg_green rounded-full p-"></i><span class="  font-extrabold text-2xl text-color_primary ml-2">Rinterio</span></a>
+<body class="font-Manrope ">
+    <header class="bg-primary">
+            <section class="w-11/12 mx-auto flex justify-between items-center pt-4">
+                <div class="flex-start cursor-pointer">
+                    <a class="text-xl"><i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg_green rounded-full p-1"></i><span class="  font-extrabold text-2xl text-color_primary ml-2">Rinterio</span></a>
         
                 </div>
                 <div class="md:block hidden">
                   <ul class="gap-9 leading-3 menu-horizontal pt-3">
-                    <li class="hover:font-bold"><a>Home</a></li>
-                    <li class="hover:font-bold"><a>Services</a></li>
-                    <li class="hover:font-bold"><a>Portfolio</a></li>
-                    <li class="hover:font-bold"><a>Blogs</a></li>
-                    <li class="hover:font-bold"><a>Contact Us</a></li>
+                    <li class="hover:font-bold cursor-pointer"><a>Home</a></li>
+                    <li class="hover:font-bold cursor-pointer"><a>Services</a></li>
+                    <li class="hover:font-bold cursor-pointer"><a>Portfolio</a></li>
+                    <li class="hover:font-bold cursor-pointer"><a>Blogs</a></li>
+                    <li class="hover:font-bold cursor-pointer"><a>Contact Us</a></li>
                   </ul>
                 </div>
                 <div class="md:block hidden">
@@ -68,7 +67,7 @@
 
                 <div class="dropdown block md:hidden">
                     <div tabindex="0" role="button" class="btn rounded-full">
-                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-bars text-base"></i>
                     </div>
                     <ul
                       tabindex="0"
@@ -81,6 +80,20 @@
                     </ul>
                   </div>
         </section>
+
+        <section class="w-11/12 mx-auto">
+            <div class="flex justify-center items-center">
+              <img src="./assets/banner.png" alt="Image Here">
+            </div>
+            <div class="flex flex-col justify-center items-center">
+              <h1 class="text-4xl md:text-6xl font-extrabold text-center md:w-10/12 md:mx-auto">A barn house of this design has a striking appearance</h1>
+              <p class="text-center mt-6  md:w-8/12 md:mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              <div class="mt-8">
+                <button class="btn bg-bg_green bg-opacity-50 rounded-full"><span class="font-bold text-sm">View Details</span><a class="text-xl"><i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg_green rounded-full p-1"></i></button>
+              </div>
+            </div>
+        </section>
+
     </header>
 </body>
 </html>
