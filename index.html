@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome Link -->
+    <script src="https://kit.fontawesome.com/7472c29f3c.js" crossorigin="anonymous"></script>
     <!-- tailwind and daisyUI CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,7 +41,40 @@
       </script>
 </head>
 <body class="font-Manrope">
-    <h1 class="font-extrabold text-6xl text-center ">A barn house of this design has <br> a striking appearance</h1>
-    
+    <header class="w-11/12 mx-auto">
+            <section class="flex justify-between items-center bg-base-100">
+                <div class="flex-start">
+                    <a class="text-xl"><i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg_green rounded-full p-1"></i><span class="  font-extrabold text-2xl text-color_primary ml-2">Rinterio</span></a>
+        
+                </div>
+                <div class="md:block hidden">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="md:block hidden">
+                  <a class="btn bg-bg_green text-xl font-extrabold">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 text-white bg-bg_third rounded-full p-1 "></i> </a>
+                </div>
+
+                <div class="dropdown block md:hidden">
+                    <div tabindex="0" role="button" class="btn rounded-full">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1]  shadow right-0 text-end">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+        </section>
+    </header>
 </body>
 </html>
