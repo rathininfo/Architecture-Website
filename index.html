@@ -25,6 +25,8 @@
                 bg_green : 'rgb(171, 239, 95)',
                 color_primary: 'rgb(33, 33, 33)',
                 color_secondary: 'rgb(73, 73, 73)',
+                footer_color : 'rgb(30, 30, 30)',
+                footer_description: 'rgb(115, 115, 115);'
               },
 
               fontFamily : {
@@ -62,8 +64,10 @@
                         <i class="fa-solid fa-cart-shopping text-gray-500 mr-1 bg-slate-50 rounded-full p-2 "></i>
                     </a>
 
-                  <a class="btn bg-bg_green text-xl font-extrabold">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 text-white bg-bg_third rounded-full p-1 "></i> 
-                </a>
+                  <button class=" btn rounded-3xl bg-bg_green ">
+                    <a class="text-xl font-extrabold">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 text-white bg-bg_third rounded-full p-1 "></i> 
+                    </a>
+                  </button>
                 </div>
 
                 <div class="dropdown block md:hidden">
@@ -280,9 +284,9 @@
           </section>
 
           <!-- Let's connect section -->
-          <section class="bg-form_bg bg-no-repeat bg-cover mt-24 border-white width-7">
+          <section class="bg-form_bg bg-no-repeat bg-cover mt-24 border-white width-7 py-24">
             <div class="w-11/12 md:w-10/12 mx-auto">
-              <div class="flex justify-center pt-24">
+              <div class="flex justify-center">
                 <button class="bg-bg_green bg-opacity-50 px-3 py-1 rounded-full"><i class="fa-solid fa-arrow-right-long mr-2 text-base"></i><span class="font-bold text-base">Let’s Connect</span></button>
               </div>
               
@@ -298,15 +302,39 @@
                 <input type="number" placeholder="Phone Number*" class="input input-bordered rounded-3xl md:col-span-6" />
                 <input type="email" placeholder="Email Number*" class="input input-bordered rounded-3xl md:col-span-6" />
                 <textarea class="textarea textarea-bordered h-60 md:col-span-12 rounded-3xl" placeholder="Write your message here"></textarea>
-                <button type="submit" class="btn bg-bg_green rounded-3xl md:col-span-12 "><span class="font-bold  text-base ">Send Mail</span><i class="fa-solid fa-arrow-right-long -rotate-45 text-white bg-bg_third rounded-full p-1 "></i></button>
+                <button type="submit" class="btn bg-bg_green rounded-3xl md:col-span-12"><span class="font-bold  text-base ">Send Mail</span><i class="fa-solid fa-arrow-right-long -rotate-45 text-white bg-bg_third rounded-full p-1 "></i></button>
               </form>
             </div>
            </section>
     </main> 
+<!-- start footer section -->
+    <footer class="bg-footer_color py-14 md:py-24">
+        <section class="w-11/12 md:w-10/12 mx-auto">
+            <div class="flex justify-center items-center cursor-pointer">
+              <a class="text-xl"><i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg_green rounded-full p-1"></i><span class=" font-extrabold text-2xl text-white ml-2">Rinterio</span></a>
+          </div>
+            <div class="text-center mt-4">
+              <p class="text-base leading-6 font-medium mt-6 text-footer_description">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+            </div> 
+            
+            <!-- footer nav -->
+            <div class="py-12 flex justify-center ite">
+              <ul class="gap-8 md:gap-28 leading-3 flex flex-col md:flex-row pt-3 justify-center items-center text-white">
+                <li class="hover:font-bold cursor-pointer"><a>Home</a></li>
+                <li class="hover:font-bold cursor-pointer"><a>Services</a></li>
+                <li class="hover:font-bold cursor-pointer"><a>Portfolio</a></li>
+                <li class="hover:font-bold cursor-pointer"><a>Blogs</a></li>
+                <li class="hover:font-bold cursor-pointer"><a>Contact Us</a></li>
+              </ul>
+            </div>
+     
+            <div class="flex justify-center">
+              <button class="btn rounded-3xl bg-bg_green">
+                <a class="text-xl font-extrabold">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 text-white bg-bg_third rounded-full p-1 "></i> 
+                </a>
+              </button>
+            </div>
 
-    <footer class="bg-secondary h-24">
-        <section>
-          <h2>Bangladesh</h2>
         </section>
     </footer>
 
